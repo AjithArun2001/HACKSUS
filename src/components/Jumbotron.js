@@ -144,7 +144,7 @@ function Jumbotron() {
             <ButtonDiv>
                 <div 
                     className="apply-button" 
-                    data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+                    data-hackathon-slug="hacksus" 
                     data-button-theme="dark"
                     style={{height: "150px", width: "200px"}}
                 ></div>

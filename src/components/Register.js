@@ -42,7 +42,7 @@ function Register() {
             <h1>Create an Impact</h1>
             <div 
                 class="apply-button" 
-                data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+                data-hackathon-slug="hacksus" 
                 data-button-theme="dark"
             ></div>
         </Container>

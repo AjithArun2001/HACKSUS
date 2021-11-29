@@ -19,6 +19,11 @@ function Partners() {
             padding: 3vh 0;
             margin: 0;
         }
+
+        a{
+            cursor: pointer;
+        }
+        
         img{
             margin: 10px 0;
         }
@@ -27,6 +32,10 @@ function Partners() {
             h1{
                 font-size: 3.5em;
             }
+
+            img{
+                margin: 10px;
+            }
         }
 
     `
@@ -34,12 +43,12 @@ function Partners() {
     return (
         <Container id="partners">
             <h1>Gold Partners</h1>
-            <img src={devfolio} alt={"devfolio"} />
+            <a rel="noreferrer" target="_blank" href="https://devfolio.co/"><img src={devfolio} alt={"devfolio"} /></a>
+            <a rel="noreferrer" target="_blank" href="https://polygon.technology/"><img src={polygon} alt={"polygon"} /></a>
             <h1>Silver Partners</h1>
-            <img src={polygon} alt={"polygon"} />
-            <img src={tezos} alt={"tezos"} />
-            <img src={celo} alt={"celo"} />
-            <img src={filecoin} alt={"filecoin"} />
+            <a rel="noreferrer" target="_blank" href="https://tezos.com/"><img src={tezos} alt={"tezos"} /></a>
+            <a rel="noreferrer" target="_blank" href="https://celo.org/"><img src={celo} alt={"celo"} /></a>
+            <a rel="noreferrer" target="_blank" href="https://filecoin.io/"><img src={filecoin} alt={"filecoin"} /></a>
             <h1>Cloud Partners</h1>
             <img src={aws} alt={"aws"} />
         </Container>
