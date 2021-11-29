@@ -1,5 +1,4 @@
 import React,{useState, useEffect} from 'react'
-import ReactDOM from "react-dom";
 import styled from 'styled-components'
 import Theme from '../datas/Theme';
 
@@ -32,6 +31,8 @@ function getWindowDimensions() {
 function Themes() {
 
     const { height, width } = useWindowDimensions();
+
+    console.log(height);
 
     const Container = styled.div`
         padding: 0 10vw;

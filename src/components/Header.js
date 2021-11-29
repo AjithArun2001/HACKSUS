@@ -79,7 +79,9 @@ function Header() {
 
     const { height, width } = useWindowDimensions();
 
-
+    
+    console.log(height);
+    
     return (
         <>
         <Container>
