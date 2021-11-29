@@ -5,7 +5,7 @@ function Register() {
 
     const Container = styled.div`
         padding: 0 10vw;
-        color: #707070;
+        color: #2C473E;
         margin: 5vh 0;
 
         h1{
@@ -16,6 +16,11 @@ function Register() {
             margin-top: 5vh !important;
             width: 70% !important;
         }
+
+        @media (min-width: 1200px){
+            padding: 3vh 10vw;
+        }
+
     `
 
     React.useEffect(() => {

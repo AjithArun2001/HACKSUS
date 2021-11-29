@@ -6,13 +6,13 @@ import lotus from './images/lotus.png'
 function Footer() {
 
     const Container = styled.div`
-        background-color: #C4C4C4;
+        background-color: #2C473E;
         height: 200px;
         width: 100vw;
         margin-top: 20vh;
 
         h1{
-            color: #2C473E;
+            color: white;
             font-size: 2.5em;
             margin: 0;
         }

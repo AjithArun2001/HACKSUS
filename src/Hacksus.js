@@ -9,10 +9,11 @@ import Partners from './components/Partners'
 import FAQs from './components/FAQs'
 import Register from './components/Register'
 import Footer from './components/Footer'
+import Rules from './components/Rules'
  
 function Hacksus() {
     return (
-        <div>
+        <div /* style={{backgroundColor: "black"}} */>
             <Header />
             <Jumbotron />
             <About />
@@ -20,6 +21,7 @@ function Hacksus() {
             <Themes />
             <Schedule />
             <Partners />
+            <Rules />
             <FAQs />
             <Register />
             <Footer />

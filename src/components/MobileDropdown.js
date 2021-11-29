@@ -7,8 +7,7 @@ function mobileDropdown() {
     const MenuSection = styled.div`
         height: 50px;
         width: 100vw;
-        background-color: gray;
-        border: 1px solid white;
+        background-color: #D5E5BC;
         box-sizing: border-box;
         position: relative;
 
@@ -19,7 +18,9 @@ function mobileDropdown() {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            color: white;
+            color: #2C2C2C;
+            font-weight: bold;
+            font-size: 1.1em;
         }
     `
     return (

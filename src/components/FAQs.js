@@ -2,54 +2,75 @@ import React,{ useState } from 'react'
 import styled from 'styled-components'
 import plus from './images/plus.png';
 import close from './images/close.png'
+import FAQ from '../datas/FAQ'
 
 function FAQs() {
 
     const Container = styled.div`
         padding: 0 10vw;
-        color: #707070;
+        color: #2c2c2c;
         margin: 5vh 0;
 
         h1{
             padding: 3vh 0;
             margin: 0;
         }
+
+        @media (min-width: 1200px){
+            h1{
+                font-size: 3.5em;
+            }
+        }
     `
     const QnBox = styled.div`
-        height: 80px;
-        background-color: lightgray;
+        background-color: #B0D182;
         margin-bottom: 3vh;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
         
         p{
             margin: 0;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             font-size: 1.1em;
+            padding: 10px;
+            text-align: left;
         }
 
         img{
             height: 40px;
             padding: 20px;
-            float: right;
+        }
+
+        @media (min-width: 1200px){
+            width: 60%;
+            margin: 0 auto 3vh auto;
+            
+            img{
+                height: 20px;
+            }
         }
     `
     const AnsBox = styled.div`
-        height: 80px;
-        color: white;
-        background-color: gray;
-        position: relative;
         margin: -3vh 0 3vh 0;
+        display: flex;
+        align-items: center;
+        border: 3px solid #B0D182;
+        text-align: left;
         
         p{
             margin: 0;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             font-size: 1.1em;
+            padding: 10px;
+            
+        }
+
+        @media (min-width: 1200px){
+            box-sizing: border-box;
+            width: 60%;
+            margin: -3vh auto 3vh auto;
+
+            
         }
     `
 
@@ -58,46 +79,27 @@ function FAQs() {
 
     const handleClick = (x, id) => {
         setAnsDropdown(x);
-        setQnid(id);
+        setQnid(id);    
     }
 
     return (
         <Container id="faqs">
             <h1>FAQ's</h1>
-            <QnBox>
-                <p>Question-1</p>
-                {ansDropdown && qnid === 1 ? 
-                <>
-                <img onClick={() => handleClick(false,1)} src={close} alt={"close icon"} />
-                </>
-                :
-                <img onClick={() => handleClick(true,1)} src={plus} alt={"plus icon"} />
-                }     
-            </QnBox>
-            {ansDropdown && qnid ===1 ? <AnsBox><p>Answer-1</p></AnsBox> : null}
-            <QnBox>
-                <p>Question-2</p>
-                {ansDropdown && qnid === 2 ? 
-                <>
-                <img onClick={() => handleClick(false,2)} src={close} alt={"close icon"} />
-                </>
-                :
-                <img onClick={() => handleClick(true,2)} src={plus} alt={"plus icon"} />
-                }     
-            </QnBox>
-            {ansDropdown && qnid === 2 ? <AnsBox><p>Answer-2</p></AnsBox> : null}
-            <QnBox>
-                <p>Question-3</p>
-                {ansDropdown && qnid === 3 ? 
-                <>
-                <img onClick={() => handleClick(false,3)} src={close} alt={"close icon"} />
-                </>
-                :
-                <img onClick={() => handleClick(true,3)} src={plus} alt={"plus icon"} />
-                }     
-            </QnBox>
-            {ansDropdown && qnid === 3 ? <AnsBox><p>Answer-3</p></AnsBox> : null}
-            <p>Read the code of conduct <a href="www.google.com">here</a></p>
+            {FAQ.map(({id, ques, ans}) => 
+            <>
+            <QnBox id={id}>
+                    <p>{ques}</p>
+                    {ansDropdown && qnid === id ? 
+                    <>
+                    <img onClick={() => handleClick(false,id)} src={close} alt={"close icon"} />
+                    </>
+                    :
+                    <img onClick={() => handleClick(true,id)} src={plus} alt={"plus icon"} />
+                    }     
+                </QnBox>
+                {ansDropdown && qnid === id ? <AnsBox id={id}><p>{ans}</p></AnsBox> : null}
+            </>
+            )}
         </Container>
     )
 }

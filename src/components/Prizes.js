@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import flower from './images/flower.png'
 
 
 
@@ -7,23 +8,37 @@ function Prizes() {
 
     const Container = styled.div`
         padding: 0 10vw;
-        color: #707070;
+        color: #2c2c2c;
         margin: 5vh 0;
 
         h2{
             padding: 2vh 0;
             margin: 0;
+            font-size: 3em;
         }
         p{
             margin: 0;
             padding: 0 0 5vh 0;
             text-align: left;
         }
+
+        @media (min-width: 1200px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-size: 1.2em;
+
+            h2{
+                flex-basis: 100%;
+                float: right;
+            }
+        }
     `
 
     const PrizeMoney = styled.div`
 
         text-align: left;
+        
 
         p{
             margin: 0;
@@ -36,47 +51,56 @@ function Prizes() {
             font-size: 3.5em;
             margin: 0;
             padding: 0;
+            color: ${(props) => props.color};
+            
             
         }
-    `
-
-    const DetailedBreakdown = styled.div`
-
         div{
-            background-color: whitesmoke;
-            width: 100%;
-            height: 400px;
-            margin-bottom: 5vh;
+            display: flex;
+            justify-content: space-between;
         }
-    `
 
-    const MiscPrizes = styled.div`
-        background-color: lightgray;
-        height: 100px;
-        margin-bottom: 5vh;
+        @media (min-width: 1200px){
+            border: 3px solid ${(props) => props.color} ;
+            padding: 10px;
+            width: 25%;
+
+            p{
+                font-weight: bold;
+            }
+
+            h1{
+                font-size: 2.5em;
+            }
+        
+        }
     `
 
     return (
         <>
         <Container id="prizes">
             <h2>Prizes</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <PrizeMoney>
-            <p>Total prize money of</p>
-            <h1>Rs.12,000+</h1>
+            <PrizeMoney  color="#2C473E">
+                <div>
+                    <p>First Prize</p>
+                    <img src={flower} alt={"flower design"} />
+                </div>
+            <h1>Rs.10,000</h1>
             </PrizeMoney>
-            <PrizeMoney>
-            <p>And swags worth</p>
-            <h1>Rs.5000+</h1>
+            <PrizeMoney  color="#6A8E4E">
+                <div>
+                    <p>Second Prize</p>
+                    <img src={flower} alt={"flower design"} />
+                </div>
+            <h1>Rs.6000</h1>
             </PrizeMoney>
-            <DetailedBreakdown>
-                <h3>Detailed Breakdown</h3>
-                <div></div>
-                <div></div>
-                <div></div>
-            </DetailedBreakdown>
-            <MiscPrizes>Misc Prize 1</MiscPrizes>
-            <MiscPrizes>Misc Prize 2</MiscPrizes>
+            <PrizeMoney  color="#B0D182">
+                <div>
+                    <p>Third Prize</p>
+                    <img src={flower} alt={"flower design"} />
+                </div>
+            <h1>Rs.4000</h1>
+            </PrizeMoney>
         </Container>
 
         </>
