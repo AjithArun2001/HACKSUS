@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll';
 
+
 function mobileDropdown() {
 
     const MenuSection = styled.div`
@@ -10,6 +11,7 @@ function mobileDropdown() {
         background-color: #D5E5BC;
         box-sizing: border-box;
         position: relative;
+        z-index: 1;
 
         p{
             margin: 0;
@@ -53,6 +55,11 @@ function mobileDropdown() {
             <Link to="faqs" smooth={true}>
                 <MenuSection>
                     <p>FAQ's</p>
+                </MenuSection>
+            </Link>
+            <Link to="contactus" smooth={true}>
+                <MenuSection>
+                    <p>Contact Us</p>
                 </MenuSection>
             </Link>
             <Link to="register" smooth={true}>

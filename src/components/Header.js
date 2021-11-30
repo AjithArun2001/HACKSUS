@@ -40,6 +40,8 @@ function Header() {
         background-color: #B0D182;
         display: flex;
         justify-content: space-between;
+        z-index: 1;
+        position: relative;
     `
 
     const Logo = styled.img`
@@ -117,6 +119,11 @@ function Header() {
                 <Link to="faqs" smooth={true}>
                     <li>
                         <p>FAQ's</p>
+                    </li>
+                </Link>
+                <Link to="contactus" smooth={true}>
+                    <li>
+                        <p>Contact Us</p>
                     </li>
                 </Link>
                 <Link to="register" smooth={true}>

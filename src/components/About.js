@@ -7,7 +7,9 @@ function About() {
         background-color: #2C473E;
         padding: 0 10vw;
         color: white;
-        margin: 5vh 0;
+        margin: 0 0 5vh 0;
+        z-index: 1;
+        position: relative;
 
         h2{
             padding: 2vh 0;

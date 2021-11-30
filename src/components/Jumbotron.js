@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import lotus from './images/lotus.png'
 import discord from './images/discord.png';
+import AnimationBG from './AnimationBG';
 
 function Jumbotron() {
+
+
+    const JumbotronContainer = styled.div`
+        position: relative;
+    `
 
     const Container = styled.div`
         width: 90vw;
         margin: 0 auto;
         color: #2c2c2c;
+        z-index: 1;
+        position: relative;
+        padding-bottom: 5vh;
 
         h1{
             font-weight: 900;
@@ -94,6 +103,7 @@ function Jumbotron() {
 
         img{
             height: 36px;
+            padding-right: 20px;
 
         }
 
@@ -116,7 +126,7 @@ function Jumbotron() {
         }
     `
 
-    React.useEffect(() => {
+    useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://apply.devfolio.co/v2/sdk.js';
         script.async = true;
@@ -127,9 +137,11 @@ function Jumbotron() {
         }
     }, []);
 
-
     return (
+        <JumbotronContainer>
+        <AnimationBG />
         <Container>
+        
             <Lotus src={lotus} alt={"lotus icon"} />
             <h1>HackS'US</h1>
             
@@ -150,6 +162,7 @@ function Jumbotron() {
             </ButtonDiv>
 
         </Container>
+        </JumbotronContainer>
     )
 }
 
