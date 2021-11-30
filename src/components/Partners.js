@@ -6,6 +6,7 @@ import tezos from './images/partners/tezos.png';
 import filecoin from './images/partners/filecoin.png'
 import celo from './images/partners/celo.png'
 import aws from './images/partners/aws.png'
+import uniexperts from './images/partners/Unixperts.png';
 
 function Partners() {
 
@@ -28,6 +29,11 @@ function Partners() {
             margin: 10px 0;
         }
 
+        div{
+            display: block;
+            width: 100%;
+        }
+
         @media (min-width: 1200px){
             h1{
                 font-size: 3.5em;
@@ -39,6 +45,32 @@ function Partners() {
         }
 
     `
+    const PartnerDiv = styled.div`
+
+        display: block;
+        width: 100px;
+
+        h1{
+            width: 100%;
+        }
+
+        @media (min-width: 1200px){
+            width: 50%;
+            display: inline;
+        }
+    `
+
+    const UniexpertsImage = styled.img`
+
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+
+        @media (min-width: 1200px){
+            width: 50%;
+        }
+    `
 
     return (
         <Container id="partners">
@@ -49,8 +81,16 @@ function Partners() {
             <a rel="noreferrer" target="_blank" href="https://tezos.com/"><img src={tezos} alt={"tezos"} /></a>
             <a rel="noreferrer" target="_blank" href="https://celo.org/"><img src={celo} alt={"celo"} /></a>
             <a rel="noreferrer" target="_blank" href="https://filecoin.io/"><img src={filecoin} alt={"filecoin"} /></a>
-            <h1>Cloud Partners</h1>
-            <img src={aws} alt={"aws"} />
+            <div>
+                <PartnerDiv>
+                    <h1>Premium Partners</h1>
+                    <UniexpertsImage src={uniexperts} alt={"uniexperts"} />
+                </PartnerDiv>
+                <PartnerDiv>
+                    <h1>Cloud Partners</h1>
+                    <img src={aws} alt={"aws"} />
+                </PartnerDiv>
+            </div>
         </Container>
     )
 }

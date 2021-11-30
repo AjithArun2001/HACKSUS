@@ -21,6 +21,10 @@ function Rules() {
             h1{
                 font-size: 3.5em;
             }
+
+            li{
+                font-size: 1.5em;
+            }
         }
     `
     

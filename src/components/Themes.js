@@ -102,7 +102,7 @@ function Themes() {
             width: 100% !important;
             margin: 0;
             padding: 10px;
-            text-align: center;
+            text-align: left;
 
         }
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import lotus from './images/lotus.png'
-import iedc from './images/iedc-logo.png'
 import discord from './images/discord.png';
 
 function Jumbotron() {
@@ -81,7 +80,7 @@ function Jumbotron() {
     `
 
     const DiscordBtn = styled.button`
-        border: 2px solid #707070;
+        border: 0;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -135,12 +134,11 @@ function Jumbotron() {
             <h1>HackS'US</h1>
             
             <IedcContainer>
-                <h3>Brought to you by</h3>
-                <img src={iedc} alt={"iedc logo"} />
+                <h3>Brought to you by RSET IEDC</h3>
             </IedcContainer>
             <p>A 48 hour hackathon featuring the 
                 importance of sustainable development goals</p>
-            <p>December 3rd, 6 pm to December 4th, 6 pm </p>
+            <p>December 3rd, 6 pm to December 5th, 6 pm </p>
             <ButtonDiv>
                 <div 
                     className="apply-button" 

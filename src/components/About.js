@@ -28,16 +28,16 @@ function About() {
             padding: 20px 0;
 
         h2{
-            width: 20%;
+            width: 15%;
             text-align: right;
-            font-size: 4em;
+            font-size: 3em;
             padding-right: 30px;
             line-height: 70px;
         }
 
         p{
             width: 60%;
-            font-size: 1.5em;
+            font-size: 1.3em;
             padding: 0;
         }
     }
@@ -45,7 +45,7 @@ function About() {
     return (
         <Container id="about">
             <h2>About the event</h2>
-            <p>HackS'US is a 48-hour online hackathon organized by IEDC RSET focusing on the importance of sustainable development goals. In this 48 hours, participants will be able to build exciting products on their tech stack of choice, attend talks from industrial leaders, solve problems regarding sustainability, and much more.</p>
+            <p>HackS'US is a 48-hour online hackathon organized by RSET IEDC focusing on the importance of sustainable development goals. In 48 hours, participants will be able to build exciting products on their tech stack of choice, attend talks from industrial leaders, solve problems regarding sustainability, and much more.</p>
         </Container>
     )
 }

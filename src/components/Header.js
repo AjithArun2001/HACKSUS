@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
-import logo from './images/logo-white.png';
+import hacksus from './images/hacksus.png';
 import menu from './images/menu--icon.png';
 import close from './images/close.png';
 import MobileDropdown from './MobileDropdown';
@@ -85,7 +85,7 @@ function Header() {
     return (
         <>
         <Container>
-            <Logo src={logo} alt={"logo"} />
+            <Logo src={hacksus} alt={"logo"} />
             { width > 1200 ?
                 <NavBox>
                 <ul>

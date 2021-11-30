@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import lotus from './images/lotus.png'
+import iedc from './images/iedc-logo.png'
+
 
 
 function Footer() {
@@ -15,7 +17,10 @@ function Footer() {
             color: white;
             font-size: 2.5em;
             margin: 0;
+            display: none;
         }
+
+
     `
     const Lotus = styled.img`
         height: 10vh;
@@ -23,10 +28,16 @@ function Footer() {
         margin-top: -7vh;
     `
 
+    const IEDClogo = styled.img`
+        margin: 0 auto;
+        width: 150px;
+    `
+
     return (
         <Container>
-            <Lotus src={lotus} alt={"lotus icon"} />
+            <Lotus src={lotus} alt={"lotus icon"} /><br />
             <h1>RSET IEDC</h1>
+            <IEDClogo src={iedc} alt={"iedc logo"} />
         </Container>
     )
 }
