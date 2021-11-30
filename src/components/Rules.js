@@ -32,8 +32,8 @@ function Rules() {
         <Container>
             <h1>Rules</h1>
             <ul>
-                {rules.map(({id,rule}) =>
-                    <li id={id}>{rule}</li>
+                {rules.map(({id,rule,link}) =>
+                    <li id={id}>{rule}<a rel="noreferrer" target="_blank" href={link}>{link}</a> </li>
                 )}
             </ul>
         </Container>

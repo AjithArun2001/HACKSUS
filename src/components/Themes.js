@@ -61,6 +61,7 @@ function Themes() {
             background-color: #B0D182;
             margin-bottom: 20px;
             align-items: center;
+            cursor: pointer;
         }
 
         span{
@@ -108,6 +109,27 @@ function Themes() {
 
     `
 
+    const TracksBox = styled.div`
+        background-color: #2C473E;
+        width: 100vw;
+        padding: 40px 0;
+
+        h1{
+            font-size: 2.5em;
+            color: white;
+        }
+
+        div{
+            width: 200px;
+            margin: 20px auto;
+            background-color: #B0D182;
+            color: #2C473E;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    `
+
     const [cardFlip, setCardFlip] = useState([true,true,true,true,true,true,true,true,true,true]);
 
     const handleClick = (x,id) => {
@@ -130,6 +152,7 @@ function Themes() {
     /* width <= 1200 ? onClick={() => handleClick(false, id)} : onHover={() => handleClick(false, id)} */
 
     return (
+        <>
         <Container id="themes">
             <h1>Themes</h1>
             <ThemesBox>
@@ -146,6 +169,12 @@ function Themes() {
                 )}
             </ThemesBox>
         </Container>
+        <TracksBox>
+            <h1>Tracks</h1>
+            <div>Hardware</div>
+            <div>Software</div>
+        </TracksBox>
+        </>
     )
 }
 

@@ -1,6 +1,6 @@
 const rules = [
     {id:1, rule: "The hackathon will be solely based on the sustainable development goals (SDG), by The United Nations."},
-    {id:2, rule: "The projects created by the team/individual should align with any of the 17 SDG goals.  For Reference: https://sdgs.un.org/goals"},
+    {id:2, rule: "The projects created by the team/individual should align with any of the 17 SDG goals.  For Reference:  ", link: "https://sdgs.un.org/goals" },
     {id:3, rule: "Participants can either participate individually or as a team of maximum four members. "},
     {id:4, rule: "There will be a provision for the formation of team in discord."},
     {id:5, rule: "The projects should be started from scratch during the event timeline(within the 48 hours). Any misconduct found will lead to disqualification of the participants"},
