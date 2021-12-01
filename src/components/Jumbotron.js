@@ -9,6 +9,7 @@ function Jumbotron() {
 
     const JumbotronContainer = styled.div`
         position: relative;
+        overflow-x: hidden;
     `
 
     const Container = styled.div`

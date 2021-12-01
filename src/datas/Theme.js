@@ -1,5 +1,5 @@
 const Theme = [
-    {id : 1 , theme : "Eradiction of Poverty and Hunger", info : "Ideas for eradicating poverty, hunger and thereby increasing prosperity and growth of healthy families."},
+    {id : 1 , theme : "Eradication of Poverty and Hunger", info : "Ideas for eradicating poverty, hunger and thereby increasing prosperity and growth of healthy families."},
     {id : 2 , theme : "Clean Energy ", info : "Develop Innovative ideas to ensure access to affordable, reliable, sustainable, and modern energy for all. Explore the possibilities of generating renewable energy in the current world environment."},
     {id : 3 , theme : "Climate Change", info : "Ideas that can help monitoring the climatic changes and help to take adequate measures."},
     {id : 4 , theme : "Life on Land and Water", info : "Ideas that help in conserving and restoring flora and fauna on the planet."},

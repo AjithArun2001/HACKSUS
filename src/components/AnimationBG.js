@@ -24,7 +24,7 @@ function AnimationBG({height}) {
       loaded={particlesLoaded}
       width = "100vw"
       height = "100%"
-      style ={{position: "absolute", top: 0, left: 0}}
+      style ={{position: "absolute", top: 0, left: 0, overflowX: "hidden"}}
       options={{
         background: {
           color: {
