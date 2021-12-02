@@ -159,7 +159,7 @@ function Jumbotron() {
                     data-button-theme="dark"
                     style={{height: "150px", width: "200px"}}
                 ></div>
-                <DiscordBtn><img src={discord} alt={"discord icon"} /><p>Join discord channel</p></DiscordBtn>
+                <a href="https://discord.gg/rYkTZBKJ"> <DiscordBtn><img src={discord} alt={"discord icon"} /><p>Join discord channel</p></DiscordBtn></a>
             </ButtonDiv>
 
         </Container>
