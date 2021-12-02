@@ -33,6 +33,10 @@ function Jumbotron() {
             font-size: 0.9em;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         @media (min-width: 1200px){
             
             font-size: 2em;
