@@ -100,7 +100,7 @@ function Jumbotron() {
         <AnimationBG />
         <Container>
         
-            <h1>HackS'US&ensp;1.5</h1>
+            <h1>HackS'US 1.5</h1>
             <IedcContainer>
                 <h3>Brought to you by RSET IEDC</h3>
             </IedcContainer>
