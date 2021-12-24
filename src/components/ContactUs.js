@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function ContactUs() {
 
     const Container = styled.div`
-        background-color: #B0D182;
+        background-color: #14B1B2;
         padding: 10px 10vw;
         color: #2C2C2C;
         margin: 5vh 0;
@@ -30,7 +30,7 @@ function ContactUs() {
             padding: 40px 10vw;
 
             h1{
-                width: 15%;
+                width: 17%;
                 text-align: right;
                 padding: 0 50px;
             }
@@ -49,7 +49,7 @@ function ContactUs() {
                 <p>Email us your queries at: <a href="mailto: hacksus21@gmail.com">hacksus21@gmail.com</a></p><br/>
                 <span>Event Co-ordinators:</span>
                 <p>Abhijith Das - <a href="tel: +917306066845">+91 73060 66845</a></p>
-                <p>Dijo Daiju - <a href="tel: +916235290414">+91 62352 90414</a></p>
+                <p>Sonia George - <a href="tel: +919061737731">+91 90617 37731</a></p>
             </div>
         </Container>
     )

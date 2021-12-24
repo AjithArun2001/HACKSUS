@@ -11,22 +11,27 @@ import Register from './components/Register'
 import Footer from './components/Footer'
 import Rules from './components/Rules'
 import ContactUs from './components/ContactUs';
+import './App.css';
+import PrblmStatements from './components/PrblmStatements';
+
 
  
 function Hacksus() {
     return (
-        <div>
+        <div className="App">
             <Header />
             <Jumbotron />
             <About />
-            <Prizes />
+            {/* <Prizes /> */}
+            
+            <PrblmStatements />
             <Themes />
             <Schedule />
-            <Partners />
+            {/* <Partners /> */}
             <Rules />
-            <FAQs />
+            {/* <FAQs /> */}
             <ContactUs />
-            <Register />
+            {/* <Register /> */}
             <Footer />
         </div>
     )

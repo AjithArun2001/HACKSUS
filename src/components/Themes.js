@@ -110,7 +110,7 @@ function Themes() {
     `
 
     const TracksBox = styled.div`
-        background-color: #2C473E;
+        background-color: #245757;
         width: 100vw;
         padding: 40px 0;
 
@@ -122,7 +122,7 @@ function Themes() {
         div{
             width: 200px;
             margin: 20px auto;
-            background-color: #B0D182;
+            background-color: #14B1B2;
             color: #2C473E;
             padding: 20px;
             font-weight: bold;
@@ -153,7 +153,7 @@ function Themes() {
 
     return (
         <>
-        <Container id="themes">
+        {/* <Container id="themes">
             <h1>Themes</h1>
             <ThemesBox>
                 {Theme.map(({id,theme,info}) => 
@@ -168,8 +168,8 @@ function Themes() {
                         </InfoDiv>
                 )}
             </ThemesBox>
-        </Container>
-        <TracksBox>
+        </Container> */}
+        <TracksBox id="tracks">
             <h1>Tracks</h1>
             <div>Hardware</div>
             <div>Software</div>

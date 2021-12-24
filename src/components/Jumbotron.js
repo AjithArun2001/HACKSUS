@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import lotus from './images/lotus.png'
-import discord from './images/discord.png';
 import AnimationBG from './AnimationBG';
 
 function Jumbotron() {
@@ -18,19 +17,20 @@ function Jumbotron() {
         color: #2c2c2c;
         z-index: 1;
         position: relative;
-        padding-bottom: 5vh;
+        padding: 5vh 0 9vh 0;
 
         h1{
             font-weight: 900;
             font-size: 4em;
-            margin: 0;
-            background: -webkit-linear-gradient(#6A8E4E, #2C473E);
+            margin: 50px 0 0 0;
+            background: -webkit-linear-gradient(#157F80, #166457);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         p{
-            font-size: 0.9em;
+            font-size: 0.7em;
+            font-weight: 500;
         }
 
         a{
@@ -47,7 +47,7 @@ function Jumbotron() {
             }
 
             h1{
-                font-size: 4.2em;
+                font-size: 3em;
                 font-weight: 700;
             }
         }
@@ -66,7 +66,8 @@ function Jumbotron() {
         h3{
             margin: 0;
             font-weight: lighter;
-            padding-top: 10px;
+            margin-top: -10px;
+            font-size: 0.6em;
         }
 
         img{
@@ -144,27 +145,15 @@ function Jumbotron() {
 
     return (
         <JumbotronContainer>
-        <AnimationBG />
+        {/* <AnimationBG /> */}
         <Container>
         
-            <Lotus src={lotus} alt={"lotus icon"} />
-            <h1>HackS'US</h1>
-            
+            <h1>HackS'US&ensp;1.5</h1>
             <IedcContainer>
                 <h3>Brought to you by RSET IEDC</h3>
             </IedcContainer>
-            <p>A 48 hour hackathon featuring the 
-                importance of sustainable development goals</p>
-            <p>December 3rd, 6 pm to December 5th, 6 pm </p>
-            <ButtonDiv>
-                <div 
-                    className="apply-button" 
-                    data-hackathon-slug="hacksus" 
-                    data-button-theme="dark"
-                    style={{height: "150px", width: "200px"}}
-                ></div>
-                <a href="https://discord.gg/rYkTZBKJ"> <DiscordBtn><img src={discord} alt={"discord icon"} /><p>Join discord channel</p></DiscordBtn></a>
-            </ButtonDiv>
+            <p>A 36 hour regional hackathon</p>
+            <p>An offline event from December 28th, 9 am to December 29th, 4 pm at Rajagiri School of Engineering and Technology</p>
 
         </Container>
         </JumbotronContainer>

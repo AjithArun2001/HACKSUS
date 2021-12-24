@@ -8,7 +8,8 @@ function mobileDropdown() {
     const MenuSection = styled.div`
         height: 50px;
         width: 100vw;
-        background-color: #D5E5BC;
+        background-color: #222222;
+        
         box-sizing: border-box;
         position: relative;
         z-index: 1;
@@ -20,7 +21,7 @@ function mobileDropdown() {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            color: #2C2C2C;
+            color: #f3fefe;
             font-weight: bold;
             font-size: 1.1em;
         }
@@ -29,17 +30,17 @@ function mobileDropdown() {
         <>
             <Link to="about" smooth={true}>
                 <MenuSection>
-                    <p>About</p>
-                </MenuSection>
-            </Link>
-            <Link to="prizes" smooth={true}>
-                <MenuSection>
-                    <p>Prizes</p>
+                    <p>Overview</p>
                 </MenuSection>
             </Link>
             <Link to="themes" smooth={true}>
                 <MenuSection>
-                    <p>Themes and Tracks</p>
+                    <p>Problem Statements</p>
+                </MenuSection>
+            </Link>
+            <Link to="tracks" smooth={true}>
+                <MenuSection>
+                    <p>Tracks</p>
                 </MenuSection>
             </Link>
             <Link to="schedule" smooth={true}>
@@ -47,26 +48,21 @@ function mobileDropdown() {
                     <p>Schedule</p>
                 </MenuSection>
             </Link>
-            <Link to="partners" smooth={true}>
+            {/* <Link to="partners" smooth={true}>
                 <MenuSection>
                     <p>Partners</p>
                 </MenuSection>
-            </Link>
-            <Link to="faqs" smooth={true}>
-                <MenuSection>
-                    <p>FAQ's</p>
-                </MenuSection>
-            </Link>
+            </Link> */}
             <Link to="contactus" smooth={true}>
                 <MenuSection>
                     <p>Contact Us</p>
                 </MenuSection>
             </Link>
-            <Link to="register" smooth={true}>
+            {/* <Link to="register" smooth={true}>
                 <MenuSection>
                     <p>Register</p>
                 </MenuSection>
-            </Link>
+            </Link> */}
         </>
     )
 }

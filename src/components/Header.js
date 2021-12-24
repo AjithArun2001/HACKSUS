@@ -37,7 +37,7 @@ function getWindowDimensions() {
 function Header() {
 
     const Container = styled.div`
-        background-color: #B0D182;
+        background-color: #222222;
         display: flex;
         justify-content: space-between;
         z-index: 1;
@@ -47,6 +47,7 @@ function Header() {
     const Logo = styled.img`
             height: 10vh;
             padding: 1vh;
+            margin-top: -10px;
         
     `
     const DropdownIcon = styled.img`
@@ -71,7 +72,7 @@ function Header() {
         }
 
         li{
-            color: #2c2c2c;
+            color: #F3FEFE;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -93,17 +94,22 @@ function Header() {
                 <ul>
                 <Link to="about" smooth={true}>
                     <li>
-                        <p>About</p>
+                        <p>Overview</p>
                     </li>
                 </Link>
-                <Link to="prizes" smooth={true}>
+                {/* <Link to="prizes" smooth={true}>
                     <li>
                         <p>Prizes</p>
                     </li>
-                </Link>
+                </Link> */}
                 <Link to="themes" smooth={true}>
                     <li>
-                        <p>Themes</p>
+                        <p>Problem Statements</p>
+                    </li>
+                </Link>
+                <Link to="tracks" smooth={true}>
+                    <li>
+                        <p>Tracks</p>
                     </li>
                 </Link>
                 <Link to="schedule" smooth={true}>
@@ -111,26 +117,16 @@ function Header() {
                         <p>Schedule</p>
                     </li>
                 </Link>
-                <Link to="partners" smooth={true}>
-                    <li>
-                        <p>Partners</p>
-                    </li>
-                </Link>
-                <Link to="faqs" smooth={true}>
-                    <li>
-                        <p>FAQ's</p>
-                    </li>
-                </Link>
                 <Link to="contactus" smooth={true}>
                     <li>
                         <p>Contact Us</p>
                     </li>
                 </Link>
-                <Link to="register" smooth={true}>
+                {/* <Link to="register" smooth={true}>
                     <li>
                         <p>Register</p>
                     </li>
-                </Link>
+                </Link> */}
                 </ul>
                 </NavBox>
             :

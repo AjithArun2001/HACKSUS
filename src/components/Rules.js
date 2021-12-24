@@ -30,12 +30,12 @@ function Rules() {
     
     return (
         <Container>
-            <h1>Rules</h1>
-            <ul>
+            <h1>Code of Conduct</h1>
+            <ol>
                 {rules.map(({id,rule,link}) =>
                     <li id={id}>{rule}<a rel="noreferrer" target="_blank" href={link}>{link}</a> </li>
                 )}
-            </ul>
+            </ol>
         </Container>
     )
 }
