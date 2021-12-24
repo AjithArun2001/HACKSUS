@@ -117,6 +117,11 @@ function Header() {
                         <p>Schedule</p>
                     </li>
                 </Link>
+                <Link to="rules" smooth={true}>
+                    <li>
+                        <p>Rules</p>
+                    </li>
+                </Link>
                 <Link to="contactus" smooth={true}>
                     <li>
                         <p>Contact Us</p>

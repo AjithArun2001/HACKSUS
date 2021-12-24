@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import lotus from './images/lotus.png'
-import AnimationBG from './AnimationBG';
+import AnimationBG from './AnimationBG'
+
 
 function Jumbotron() {
 
@@ -26,6 +26,7 @@ function Jumbotron() {
             background: -webkit-linear-gradient(#157F80, #166457);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            line-height: 75px;
         }
 
         p{
@@ -54,10 +55,7 @@ function Jumbotron() {
 
     `
 
-    const Lotus = styled.img`
-        height: 10vh;
-        margin-top: 20px;
-    `
+ 
 
     const IedcContainer = styled.div`
         display: flex;
@@ -66,7 +64,7 @@ function Jumbotron() {
         h3{
             margin: 0;
             font-weight: lighter;
-            margin-top: -10px;
+            margin-top: 0;
             font-size: 0.6em;
         }
 
@@ -75,62 +73,16 @@ function Jumbotron() {
         }
 
         @media (min-width: 1200px){
+
+            margin-top: 20px;
+
             img{
                 height: 90px;
             }
         }
     `
 
-    const ButtonDiv = styled.div`
-
-        display: block;
-
-
-        @media (min-width: 1200px){
-            display: flex;
-            justify-content: space-around;
-            width: 60%;
-            margin: 0 auto;
-        }
-    `
-
-    const DiscordBtn = styled.button`
-        border: 0;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        margin: 10px auto;
-        background-color: #1F2932;
-        height: 44px;
-        width: 312px;
-        padding: 0;
-        align-items: center;
-        cursor: pointer;
-
-        img{
-            height: 36px;
-            padding-right: 20px;
-
-        }
-
-        p{
-            font-size: 1.2em;
-            color: white;
-            font-weight: bold;
-        }
-
-        @media (min-width: 1200px){
-            margin: 0;
-
-            img{
-                padding: 0;
-            }
-
-            p{
-                margin: 0;
-            }
-        }
-    `
+ 
 
     useEffect(() => {
         const script = document.createElement('script');
@@ -145,7 +97,7 @@ function Jumbotron() {
 
     return (
         <JumbotronContainer>
-        {/* <AnimationBG /> */}
+        <AnimationBG />
         <Container>
         
             <h1>HackS'US&ensp;1.5</h1>

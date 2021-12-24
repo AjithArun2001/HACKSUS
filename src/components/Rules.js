@@ -29,7 +29,7 @@ function Rules() {
     `
     
     return (
-        <Container>
+        <Container id="rules">
             <h1>Code of Conduct</h1>
             <ol>
                 {rules.map(({id,rule,link}) =>
