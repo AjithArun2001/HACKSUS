@@ -58,7 +58,7 @@ function Themes() {
 
     const [cardFlip, setCardFlip] = useState([true,true,true,true,true,true,true,true,true,true]);
 
-    const handleClick = (x,id) => {
+    /* const handleClick = (x,id) => {
         if(width <= 1200){
             const newArr = [...cardFlip];
             newArr[id-1] = x;
@@ -73,7 +73,7 @@ function Themes() {
             setCardFlip(newArr);
         }
 
-    }
+    } */
 
     /* width <= 1200 ? onClick={() => handleClick(false, id)} : onHover={() => handleClick(false, id)} */
 

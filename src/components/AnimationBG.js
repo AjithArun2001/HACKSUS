@@ -1,9 +1,5 @@
 import React from 'react'
 import Particles from "react-tsparticles";
-import leafa from './images/leafs/leaf a.png'
-import leafb from './images/leafs/leaf b.png'
-import leafc from './images/leafs/leaf c.png'
-import leafd from './images/leafs/leaf d.png'
 
 function AnimationBG({height}) {
     
