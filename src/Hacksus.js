@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Jumbotron from './components/Jumbotron'
 import About from './components/About';
-
+import Partners from './components/Partners'
 import Themes from './components/Themes'
 import Schedule from './components/Schedule'
 
@@ -27,7 +27,7 @@ function Hacksus() {
             <PrblmStatements />
             <Themes />
             <Schedule />
-            {/* <Partners /> */}
+            <Partners />
             <Rules />
             {/* <FAQs /> */}
             <ContactUs />

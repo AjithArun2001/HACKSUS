@@ -1,20 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import devfolio from './images/partners/devfolio.png';
-import polygon from './images/partners/polygon.png';
-import tezos from './images/partners/tezos.png';
-import filecoin from './images/partners/filecoin.png'
-import celo from './images/partners/celo.png'
-import aws from './images/partners/aws.png'
-import uniexperts from './images/partners/Unixperts.png';
+import CSML from '../components/images/CSML.png'
+import Inspired from './images/Inspired.png'
 
 function Partners() {
 
     const Container = styled.div`
-        padding: 5vh 10vw;
+        padding: 5vh 0;
         color: #2c2c2c;
         margin: 5vh 0;
-        background-color: #B1D182;
+        background-color: #14b1b2;
 
         h1{
             padding: 3vh 0;
@@ -54,41 +49,28 @@ function Partners() {
             width: 100%;
         }
 
+        img{
+            max-width: 90vw;
+            margin: 0 auto;
+        }
+
         @media (min-width: 1200px){
             width: 50%;
             display: inline;
         }
     `
 
-    const UniexpertsImage = styled.img`
-
-        width: 100%;
-        background-color: white;
-        padding: 10px;
-        box-sizing: border-box;
-
-        @media (min-width: 1200px){
-            width: 50%;
-        }
-    `
 
     return (
         <Container id="partners">
-            <h1>Gold Partners</h1>
-            <a rel="noreferrer" target="_blank" href="https://devfolio.co/"><img src={devfolio} alt={"devfolio"} /></a>
-            <a rel="noreferrer" target="_blank" href="https://polygon.technology/"><img src={polygon} alt={"polygon"} /></a>
-            <h1>Silver Partners</h1>
-            <a rel="noreferrer" target="_blank" href="https://tezos.com/"><img src={tezos} alt={"tezos"} /></a>
-            <a rel="noreferrer" target="_blank" href="https://celo.org/"><img src={celo} alt={"celo"} /></a>
-            <a rel="noreferrer" target="_blank" href="https://filecoin.io/"><img src={filecoin} alt={"filecoin"} /></a>
             <div>
                 <PartnerDiv>
-                    <h1>Premium Partners</h1>
-                    <UniexpertsImage src={uniexperts} alt={"uniexperts"} />
+                    <h1>Premium Sponsor</h1>
+                    <img src={Inspired} alt={"Inspired"} />
                 </PartnerDiv>
                 <PartnerDiv>
-                    <h1>Cloud Partners</h1>
-                    <img src={aws} alt={"aws"} />
+                    <h1>Technical Partner</h1>
+                    <img src={CSML} alt={"CSML"} />
                 </PartnerDiv>
             </div>
         </Container>

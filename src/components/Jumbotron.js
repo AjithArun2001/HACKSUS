@@ -104,7 +104,7 @@ function Jumbotron() {
             <IedcContainer>
                 <h3>Brought to you by RSET IEDC</h3>
             </IedcContainer>
-            <p>A 36 hour regional hackathon</p>
+            <p>A 36 hour IPL regional level hackathon</p>
             <p>An offline event from December 28th, 9 am to December 29th, 4 pm at Rajagiri School of Engineering and Technology</p>
 
         </Container>

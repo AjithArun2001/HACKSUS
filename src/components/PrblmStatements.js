@@ -184,7 +184,8 @@ function PrblmStatements() {
                 {ansDropdown && qnid === 6 ? <AnsBox>
                         <p>Propose solutions to improve digital payments for public services</p>
                         <p>Key Problem areas:</p>
-                        <p>Contactless payments in public city facilities</p>
+                        <ul><li>Contactless payments in public city facilities</li></ul>
+                      
                     </AnsBox> : null}
         </Container>
     )

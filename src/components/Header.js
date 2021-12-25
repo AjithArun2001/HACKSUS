@@ -97,11 +97,6 @@ function Header() {
                         <p>Overview</p>
                     </li>
                 </Link>
-                {/* <Link to="prizes" smooth={true}>
-                    <li>
-                        <p>Prizes</p>
-                    </li>
-                </Link> */}
                 <Link to="themes" smooth={true}>
                     <li>
                         <p>Problem Statements</p>
@@ -117,6 +112,11 @@ function Header() {
                         <p>Schedule</p>
                     </li>
                 </Link>
+                <Link to="partners" smooth={true}>
+                    <li>
+                        <p>Sponsors</p>
+                    </li>
+                </Link>
                 <Link to="rules" smooth={true}>
                     <li>
                         <p>Rules</p>
@@ -127,11 +127,6 @@ function Header() {
                         <p>Contact Us</p>
                     </li>
                 </Link>
-                {/* <Link to="register" smooth={true}>
-                    <li>
-                        <p>Register</p>
-                    </li>
-                </Link> */}
                 </ul>
                 </NavBox>
             :

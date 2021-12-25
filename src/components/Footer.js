@@ -13,7 +13,6 @@ function Footer() {
     const Container = styled.div`
         background-color: #222222;
         width: 100vw;
-        margin-top: 20vh;
         
 
         @media (min-width: 1200px){

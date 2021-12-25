@@ -62,7 +62,7 @@ function About() {
 
                 <li>All open source software used for arriving at the solution need to be acknowledged and quoted duly.</li>
 
-                <li>Team can propose solutions to problems listed in Key areas but can also select an area which they feel is more critical</li>
+                <li>Teams can propose solutions to problems listed in key areas, or can also select an area that they deem to be more critical.</li>
                 
                 <li>Food and accomodation have been arranged for all the participants for the duration of the hackathon.</li></ul>
         </Container>
