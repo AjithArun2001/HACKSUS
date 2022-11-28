@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import iedc from './images/iedc-logo.png'
 import keralaiedc from './images/iedc white logo.png'
-import KSUM from './images/KSUM_White.png'
+// import KSUM from './images/KSUM_White.png'
 import rset from './images/rset white logo.png'
 import IPL from './images/ipl2022.png'
 

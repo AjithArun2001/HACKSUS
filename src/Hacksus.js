@@ -2,15 +2,15 @@ import React from 'react'
 import Header from './components/Header'
 import Jumbotron from './components/Jumbotron'
 import About from './components/About';
-import Partners from './components/Partners'
+// import Partners from './components/Partners'
 import Themes from './components/Themes'
 import Schedule from './components/Schedule'
-import Register from './components/Register'
+// import Register from './components/Register'
 
 
 
 import Footer from './components/Footer'
-import Rules from './components/Rules'
+// import Rules from './components/Rules'
 import ContactUs from './components/ContactUs';
 import './App.css';
 import PrblmStatements from './components/PrblmStatements';
