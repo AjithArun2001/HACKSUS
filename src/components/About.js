@@ -26,6 +26,7 @@ function About() {
         }
         li{
             padding: 10px;
+            font-size: 0.5 em;
         }
 
         @media (min-width: 1200px){
@@ -45,27 +46,54 @@ function About() {
             font-size: 1.3em;
         }
 
+        .button{
+
+           
+            background-color: white;
+            border: none;
+            color: #245757;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+
     }
     `
+
+   
+
+
     return (
+
+        <>
         <Container id="about">
             <h2>Overview</h2>
-            <ul><li>Participating teams are required to present innovative solutions to solve urban challenges that will make the city more liveable for all citizens.</li>
+            <ul><li> RSET IEDC as part of Techkshetra'22 presents to you <b>HackS'US 2.0</b>.</li>
                 
-                <li>The problem being addressed can be specific to a city like Kochi or can be existing across cities in India.</li>
+                <li>HackS’US 2.0 is a team based hackathon where students come together to generate solutions for real world problems and develop them into innovative proposals.</li>
 
-                <li>The solution proposed by the team can also be a smaller/initial solution to a larger problem that would require more detailed interventions.</li>
+                <li>HackS’US 2.0 is a 24-hour hackathon scheduled to be conducted from December 2nd 5 PM to December 3rd 5 PM.</li>
 
-                <li>Every team should define/redefine the problem they choose to address and prepare a problem space canvas before proceeding to the detailed solution proposal.</li>
-
-                <li>Students are welcome to bring any hardware kits required to display your solution</li>
-
-                <li>All open source software used for arriving at the solution need to be acknowledged and quoted duly.</li>
-
-                <li>Teams can propose solutions to problems listed in key areas, or can also select an area that they deem to be more critical.</li>
+                <li>Participants are requested to go through the problem statements and the rules of HackS’US 2.0 mentioned below.</li>
                 
-                <li>Food and accomodation have been arranged for all the participants for the duration of the hackathon.</li></ul>
+                <li>  <a href = "Rules.pdf" download target="_blank"><button class = "button">Rules & Regulations</button></a> </li>
+
+                </ul>
+
+
+
+
+                
+                {/* <h1>Rules</h1> */}
+
+                
         </Container>
+        </>
     )
 }
 

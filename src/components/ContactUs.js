@@ -46,10 +46,10 @@ function ContactUs() {
         <Container id="contactus">
             <h1>Contact Us</h1>
             <div>
-                <p>Email us your queries at: <a href="mailto: hacksus21@gmail.com">hacksus21@gmail.com</a></p><br/>
+                <p>Email us your queries at: <a href="mailto: rsetiedc@rajagiritech.edu.in">rsetiedc@rajagiritech.edu.in</a></p><br/>
                 <span>Event Co-ordinators:</span>
                 <p>Abhijith Das - <a href="tel: +917306066845">+91 73060 66845</a></p>
-                <p>Sonia George - <a href="tel: +919061737731">+91 90617 37731</a></p>
+                <p>Abel Thomas - <a href="tel: +919061737731">+91 99959 02054</a></p>
             </div>
         </Container>
     )

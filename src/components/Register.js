@@ -37,9 +37,9 @@ function Register() {
 
     return (
         <Container id="register">
-            <h1>Participate</h1>
+            {/* <h1>Participate</h1>
             <h1>&</h1>
-            <h1>Create an Impact</h1>
+            <h1>Create an Impact</h1> */}
             <div 
                 class="apply-button" 
                 data-hackathon-slug="hacksus" 

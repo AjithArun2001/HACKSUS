@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
-import hacksus from './images/hacksus.png';
+import hacksus from './images/logo2.png';
 import menu from './images/menu--icon.png';
 import close from './images/close.png';
 import MobileDropdown from './MobileDropdown';
@@ -112,16 +112,16 @@ function Header() {
                         <p>Schedule</p>
                     </li>
                 </Link>
-                <Link to="partners" smooth={true}>
+                {/* <Link to="partners" smooth={true}>
                     <li>
                         <p>Sponsors</p>
                     </li>
-                </Link>
-                <Link to="rules" smooth={true}>
+                </Link> */}
+                {/* <Link to="rules" smooth={true}>
                     <li>
                         <p>Rules</p>
                     </li>
-                </Link>
+                </Link> */}
                 <Link to="contactus" smooth={true}>
                     <li>
                         <p>Contact Us</p>

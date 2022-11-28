@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import schedule from './images/schedule.png'
+import schedule from './images/new_sch.jpg'
 
 function Schedule() {
 

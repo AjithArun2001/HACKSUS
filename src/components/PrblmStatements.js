@@ -92,7 +92,7 @@ function PrblmStatements() {
             <h1>Problem Statements</h1>
 
             <QnBox>
-                    <p>Mobility Solutions</p>
+                    <p>Sewage Management Problem</p>
                     {ansDropdown && qnid === 1 ? 
                     <>
                     <img onClick={() => handleClick(false,1)} src={close} alt={"close icon"} />
@@ -102,18 +102,11 @@ function PrblmStatements() {
                     }     
                 </QnBox>
                 {ansDropdown && qnid === 1 ? <AnsBox>
-                        <p>Propose solutions that improve public transport and to reimagine the way we commute in our city.</p>
-                        <p>Key Problem areas:</p>
-                        <ul>
-                            <li>Public Transport Service Improvement & Monitoring- Tech Driven Solution to improve public transport ridership</li>
-                            <li>Public Transport route rationalisation - Solutions can range from ideas relating to tools for systematic data collection/data analysis mechanism/rationalisation concepts which covers factors like supply and demand, trip frequency, boarding and alighting locations, crowd factor in buses.</li>
-                            <li>Equity and Inclusivity in public transit - Tech and data driven solutions that will promote equity in mobility for differently abled, women and children, young and old, rich and poor.</li>
-                            <li>Multi modal, sustainable transport modes- Digital and data powered solutions to identify/promote muti modal sustainable methods for pedestrians, cyclists, para transit modes</li>
-                            </ul>
+                        <p>Sewage waste management facilities that already exist find it hard to cater to the needs of society and the growing population. Improper treatment of sewage leads to many prevalent health issues in the economy. Propose a system that could aid in effectively managing sewage waste and bring an end to the prevalent diseases.</p>
                     </AnsBox> : null}
 
                 <QnBox>
-                    <p>Public Health</p>
+                    <p>Stray Dogs</p>
                     {ansDropdown && qnid === 2 ? 
                     <>
                     <img onClick={() => handleClick(false,2)} src={close} alt={"close icon"} />
@@ -123,16 +116,11 @@ function PrblmStatements() {
                     }     
                 </QnBox>
                 {ansDropdown && qnid === 2 ? <AnsBox>
-                        <p>Propose solutions to provide improved health care by increasing the coverage, quality, and efficiency of public healthcare.</p>
-                        <p>Key Problem areas:</p>
-                        <ul>
-                            <li>Easier and Faster Healthcare access for Elderly - Innovative Solutions for providing easy access to regular care.</li>
-                            <li>Integration of telehealth into existing and new practice models</li>
-                            </ul>
+                        <p>The increasing number of stray dogs in the country is posing a threat to the citizens of society. People are concerned about their safety and are on the lookout for a solution to put an end to this menace. Propose an innovative solution by means of technology that can solve this issue in a way that is ethical and moral.</p>
                     </AnsBox> : null}
 
                 <QnBox>
-                    <p>Public Safety</p>
+                    <p>Urban agriculture</p>
                     {ansDropdown && qnid === 3 ? 
                     <>
                     <img onClick={() => handleClick(false,3)} src={close} alt={"close icon"} />
@@ -142,17 +130,11 @@ function PrblmStatements() {
                     }     
                 </QnBox>
                 {ansDropdown && qnid === 3 ? <AnsBox>
-                        <p>Propose solutions that will ensure the safety and security in the city.</p>
-                        <p>Key Problem areas:</p>
-                        <ul>
-                            <li>Advanced analytics of CCTV feeds to get insights of crime areas, identify probable cause for repeated crimes in an area.</li>
-                            <li>Heat Map of Accident spots, Low lit areas</li>
-                            <li>Tracking using wearables, GPS and emergency reporting solutions</li>
-                            </ul>
+                        <p>People living in urban areas find it hard to get vegetables and fruits free from pesticides. If they are given the means to cultivate their own vegetables and fruits, the prevalent health problems will come to an end. Propose a system that can help citizens in urban areas to achieve this.</p>
                     </AnsBox> : null}
 
                 <QnBox>
-                    <p>Parking Optimisation</p>
+                    <p>Waste management</p>
                     {ansDropdown && qnid === 4 ? 
                     <>
                     <img onClick={() => handleClick(false,4)} src={close} alt={"close icon"} />
@@ -162,17 +144,27 @@ function PrblmStatements() {
                     }     
                 </QnBox>
                 {ansDropdown && qnid === 4 ? <AnsBox>
-                        <p>Propose solutions that will solving parking hassles in the city</p>
-                        <p>Key Problem areas:</p>
-                        <ul>
-                            <li>Crowdsourced parking spaces - Digital and data driven parking space identification by crowd sourcing information on parking availability</li>
-                            <li>Managing Parking Space availability and allocation - Tech based solutions which could allow prepaid parking system.</li>
-                            <li>Automatic man less collection system in parking areas</li>
-                            </ul>
+                        <p>The disposal of waste in urban areas is often hard as people don’t really have a place to discard their waste nor do they have the means to do so. Design a system that can help in urban waste management and the achievement of a more efficient system of waste segregation and treatment.</p>
                     </AnsBox> : null}
 
                     <QnBox>
-                    <p>FinTech for smart cities</p>
+                    <p>Clean water management</p>
+                    {ansDropdown && qnid === 5 ? 
+                    <>
+                    <img onClick={() => handleClick(false,5)} src={close} alt={"close icon"} />
+                    </>
+                    :
+                    <img onClick={() => handleClick(true,5)} src={plus} alt={"plus icon"} />
+                    }     
+                </QnBox>
+                {ansDropdown && qnid === 5 ? <AnsBox>
+                        <p>Many deadly diseases arise from polluted and untreated drinking water. Treating water with chlorine doesn’t always seem to be a viable and apt option. Develop a mechanism to measure the quality of water and monitor clean water distribution from various reservoirs in multiple cities in order to provide clean and safe water to the citizens.</p>
+                      
+                    </AnsBox> : null}
+
+
+                    <QnBox>
+                    <p>Potholes</p>
                     {ansDropdown && qnid === 6 ? 
                     <>
                     <img onClick={() => handleClick(false,6)} src={close} alt={"close icon"} />
@@ -182,9 +174,22 @@ function PrblmStatements() {
                     }     
                 </QnBox>
                 {ansDropdown && qnid === 6 ? <AnsBox>
-                        <p>Propose solutions to improve digital payments for public services</p>
-                        <p>Key Problem areas:</p>
-                        <ul><li>Contactless payments in public city facilities</li></ul>
+                        <p>Potholes are a threat to every day road users which is a cause for increased traffic congestion and sometimes even loss of lives. Develop a system that can help in pothole detection which can be installed in vehicles and can act as a warning system to detect upcoming potholes and also alerts the relevant authorities about damaged roads from time to time. Innovative solutions to prevent the formation of potholes are also invited.</p>
+                      
+                    </AnsBox> : null}
+
+                    <QnBox>
+                    <p>Open innovation</p>
+                    {ansDropdown && qnid === 7 ? 
+                    <>
+                    <img onClick={() => handleClick(false,7)} src={close} alt={"close icon"} />
+                    </>
+                    :
+                    <img onClick={() => handleClick(true,7)} src={plus} alt={"plus icon"} />
+                    }     
+                </QnBox>
+                {ansDropdown && qnid === 7 ? <AnsBox>
+                        <p>Projects that can reduce or eliminate the problems that come with urban development and to improve the standard of urban life.</p>
                       
                     </AnsBox> : null}
         </Container>

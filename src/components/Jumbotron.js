@@ -9,6 +9,21 @@ function Jumbotron() {
     const JumbotronContainer = styled.div`
         position: relative;
         overflow-x: hidden;
+
+
+        .button{
+
+            background-color: #245757; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor:pointer;
+
+        }
     `
 
     const Container = styled.div`
@@ -80,32 +95,39 @@ function Jumbotron() {
                 height: 90px;
             }
         }
+
+
     `
 
- 
 
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        return () => {
-        document.body.removeChild(script);
-        }
-    }, []);
+    
+
+    const redirectSite = () => {
+        // window.location.href='https://forms.gle/YGH7vGMN4HPWbG3C8';
+        window.open(
+            'https://forms.gle/VaU4VeaGb7QmTk4ZA',
+            '_blank' // <- This is what makes it open in a new window.
+          );
+    }
+
 
     return (
         <JumbotronContainer>
         <AnimationBG />
         <Container>
         
-            <h1>HackS'US 1.5</h1>
+            <h1>HackS'US 2.0</h1>
             <IedcContainer>
-                <h3>Brought to you by RSET IEDC</h3>
+                <h3>Brought to you by <b>RSET IEDC</b> as part of <b>TECHKSHETRA 2022</b><br/>(National Level Inter Collegiate Technical Fest)</h3>
+                
+                {/* <h3>(National Level Inter Collegiate Technical Fest)</h3> */}
+
             </IedcContainer>
-            <p>A 36 hour IPL regional level hackathon</p>
-            <p>An offline event from December 28th, 9 am to December 29th, 4 pm at Rajagiri School of Engineering and Technology</p>
+            <p>A 24 hour Intra-college hackathon</p>
+            <p>December 2 - December 3 </p>
+            <p>Rajagiri School of Engineering and Technology</p>
+
+            <button onClick = {redirectSite} class = "button">Register Now</button>
 
         </Container>
         </JumbotronContainer>

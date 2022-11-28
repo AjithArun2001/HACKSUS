@@ -5,6 +5,7 @@ import About from './components/About';
 import Partners from './components/Partners'
 import Themes from './components/Themes'
 import Schedule from './components/Schedule'
+import Register from './components/Register'
 
 
 
@@ -27,8 +28,8 @@ function Hacksus() {
             <PrblmStatements />
             <Themes />
             <Schedule />
-            <Partners />
-            <Rules />
+            {/* <Partners /> */}
+            {/* <Rules /> */}
             {/* <FAQs /> */}
             <ContactUs />
             {/* <Register /> */}
