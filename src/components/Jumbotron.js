@@ -24,6 +24,10 @@ function Jumbotron() {
             cursor:pointer;
 
         }
+
+
+ 
+
     `
 
     const Container = styled.div`
@@ -94,6 +98,8 @@ function Jumbotron() {
             img{
                 height: 90px;
             }
+
+
         }
 
 

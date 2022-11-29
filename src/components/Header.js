@@ -112,11 +112,11 @@ function Header() {
                         <p>Schedule</p>
                     </li>
                 </Link>
-                {/* <Link to="partners" smooth={true}>
+                <Link to="partners" smooth={true}>
                     <li>
                         <p>Sponsors</p>
                     </li>
-                </Link> */}
+                </Link>
                 {/* <Link to="rules" smooth={true}>
                     <li>
                         <p>Rules</p>
