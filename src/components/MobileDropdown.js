@@ -53,11 +53,11 @@ function mobileDropdown() {
                     <p>Sponsors</p>
                 </MenuSection>
             </Link> */}
-            <Link to="rules" smooth={true}>
+            {/* <Link to="rules" smooth={true}>
                 <MenuSection>
                     <p>Rules</p>
                 </MenuSection>
-            </Link>
+            </Link> */}
             <Link to="contactus" smooth={true}>
                 <MenuSection>
                     <p>Contact Us</p>
