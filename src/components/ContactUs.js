@@ -49,7 +49,7 @@ function ContactUs() {
                 <p>Email us your queries at: <a href="mailto: rsetiedc@rajagiritech.edu.in">rsetiedc@rajagiritech.edu.in</a></p><br/>
                 <span>Event Co-ordinators:</span>
                 <p>Abhijith Das - <a href="tel: +917306066845">+91 73060 66845</a></p>
-                <p>Abel Thomas - <a href="tel: +919061737731">+91 99959 02054</a></p>
+                <p>Abel Thomas -  <a href="tel: +919995902054">+91 99959 02054</a></p>
             </div>
         </Container>
     )
