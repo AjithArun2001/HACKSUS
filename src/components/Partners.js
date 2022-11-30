@@ -96,7 +96,7 @@ function Partners() {
         <Container id="partners">
             <div>
                 <PartnerDiv>
-                    <h1>Sponsors</h1>
+                    <h1>Collaborators</h1>
                     <img class = "awsimg" src={aws} alt={"Inspired"} />
                     <img class = "mgimg" src={mg} alt={"Inspired"} />
                     <img class = "steagimg" src={steag} alt={"Inspired"} />
